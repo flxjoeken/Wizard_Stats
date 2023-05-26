@@ -1,5 +1,5 @@
 [package]
-name = "Wizard_Stats_Back"
+name = "wizard_stats_back"
 version = "0.1.0"
 edition = "2021"
 

@@ -11,12 +11,13 @@
           <option name="buildImageConfig">
             <BuildImageConfig>
               <option name="dockerFile" value="Dockerfile" />
+              <option name="rebuildEveryTime" value="false" />
             </BuildImageConfig>
           </option>
-          <option name="buildNotPull" value="false" />
+          <option name="projectRootOnTarget" value="$PROJECT_DIR$/../wizard\ stats\ back " />
           <option name="pullImageConfig">
             <PullImageConfig>
-              <option name="tagToPull" value="rust" />
+              <option name="tagToPull" value="fedora" />
             </PullImageConfig>
           </option>
         </config>
