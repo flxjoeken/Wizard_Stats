@@ -1,7 +1,11 @@
 FROM rust:latest
 LABEL authors="felix"
 
-WORKDIR .
-COPY . /app
+RUN apt update && apt upgrade && apt install sqlite3 libsqlite3-dev -y
 
-RUN cargo build --release --manifest-path=/app/Cargo.toml
+WORKDIR /usr/src/app
+COPY . .
+
+RUN cargo install --path .
+
+CMD ["wizard_stats_back"]
